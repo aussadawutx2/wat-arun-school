@@ -1,0 +1,16 @@
+import { ArticleLayout } from '@/components/ArticleLayout'
+
+export const article = {
+  author: 'Aussadawut pimsang',
+  date: '2024-02-08',
+  title: 'กิจกรรมการมอบทุนการศึกษาแก่ผู้เข้าอบรม',
+  description:
+    'กิจกรรมการมอบทุนการศึกษาแก่ผู้เข้าอบรมเป็นกิจกรรมที่ช่วยส่งเสริมขวัญและกำลังใจแก่ผู้เข้ารับการอบรมก่อนจะสอบ โดยได้รับการอุปถัมภ์โดย พระพรหมวัชรเมธี',
+}
+
+export const metadata = {
+  title: article.title,
+  description: article.description,
+}
+
+export default (props) => <ArticleLayout article={article} {...props} />

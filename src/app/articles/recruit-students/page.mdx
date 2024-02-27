@@ -1,0 +1,23 @@
+import { ArticleLayout } from '@/components/ArticleLayout'
+import Recuit from '../recruit-students/รับสมัครนักเรียน.jpg'
+
+export const article = {
+  author: 'aussadawut pimsang',
+  date: '2023-04-22',
+  title: 'เปิดรับสมัครสามเณรหรือเยาวชน',
+  description:
+    'ประกาศ !!! สำนักเรียนวัดอรุณราชวราราม เปิดรับสมัครสามเณรหรือเยาวชน อายุระหว่าง 12-20 ปี เพื่อบรรพาชาเป็นสามเณรเข้าศึกษาพระปริยัติธรรมแผนกธรรม-บาลี ด่วน! รับจำนวนจำกัด',
+}
+
+export const metadata = {
+  title: article.title,
+  description: article.description,
+}
+
+export default (props) => <ArticleLayout article={article} {...props} />
+
+## ประกาศ !!! เปิดรับสมัครสามเณรหรือเยาวชน
+
+<Image src={Recuit} alt="" />
+สำนักเรียนวัดอรุณราชวราราม รับสมัครสามเณรหรือเยาวชน อายุ ๑๒-๒๐ ปี เพื่อบรรพชา เป็นสามเณรศึกษาพระปริยัติธรรม
+แผนกธรรม-บาลี ติดต่อสอบถาม ๐๘๕ ๑๓๙ ๙๓๓๒ พระมหานพพร อริยญาโณ{' '}
