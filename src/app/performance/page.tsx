@@ -47,14 +47,14 @@ export default function Uses() {
     >
       <div className="space-y-20">
         <ToolsSection title="ผลงาน">
-          <Tool title="ใส่เอาเองนะจ๊ะ">ใส่เอาเองนะจ๊ะ</Tool>
-          <Tool title="ใส่เอาเองนะจ๊ะ">ใส่เอาเองนะจ๊ะ</Tool>
+          <Tool title="ยังไม่มีข้อมูล">ยังไม่มีข้อมูล</Tool>
+          <Tool title="ยังไม่มีข้อมูล">ยังไม่มีข้อมูล</Tool>
         </ToolsSection>
         <ToolsSection title="นักธรรม">
-          <Tool title="ใส่เอาเองนะจ๊ะ">ใส่เอาเองนะจ๊ะ</Tool>
+          <Tool title="นักธรรม">ยังไม่มีข้อมูล</Tool>
         </ToolsSection>
         <ToolsSection title="บาลี">
-          <Tool title="บาลีโคก">ใส่เอาเองนะจ๊ะ</Tool>
+          <Tool title="บาลี">ยังไม่มีข้อมูล</Tool>
         </ToolsSection>
       </div>
     </SimpleLayout>
