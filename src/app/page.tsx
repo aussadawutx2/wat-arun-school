@@ -8,7 +8,7 @@ import { Container } from '@/components/Container'
 
 import school1 from '@/images/photos/รูปพระ/school1.jpg'
 import school2 from '@/images/photos/รูปพระ/school2.jpg'
-import school3 from '@/images/photos/รูปพระ/school3.jpg'
+import school3 from '@/images/photos/รูปพระ/school3.png'
 import school4 from '@/images/photos/รูปพระ/school4.jpg'
 import school5 from '@/images/photos/รูปพระ/school5.jpg'
 import { type ArticleWithSlug, getAllArticles } from '@/lib/articles'

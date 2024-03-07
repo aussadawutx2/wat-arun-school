@@ -3,56 +3,48 @@ import Image from 'next/image'
 
 import { Card } from '@/components/Card'
 import { SimpleLayout } from '@/components/SimpleLayout'
-import logoAnimaginary from '@/images/logos/animaginary.svg'
-import logoCosmos from '@/images/logos/cosmos.svg'
-import logoHelioStream from '@/images/logos/helio-stream.svg'
-import logoOpenShuttle from '@/images/logos/open-shuttle.svg'
-import logoPlanetaria from '@/images/logos/planetaria.svg'
+import logoPali4 from '../classroom/logo-classroom/ประโยค4.jpg'
+import logoPali3 from '../classroom/logo-classroom/ประโยค3.png'
+import logoPali1_2 from '../classroom/logo-classroom/ประโยค1-2.jpg'
 
 const classroom = [
   {
-    name: 'ห้องประโยค 1-2',
+    name: 'ห้องประโยค ป.ธ.1-2',
     description:
-      'Creating technology to empower civilians to explore space on their own terms.',
-    link: { href: 'http://planetaria.tech', label: 'planetaria.tech' },
-    logo: logoPlanetaria,
+      'บ่าย / จันทร์-เสาร์ สอนวิชาบาลีไวยากรณ์โดย พระมหานพพร อริยญาโณ ป.ธ.๙ เช้า , ค่ำ / จันทร์-เสาร์ สอนแปลมคธเป็นไทยโดย อาจารย์เอกชัย โชติไธสง ป.ธ.๙',
+    link: { href: '#', label: 'Click To Classroom' },
+    logo: logoPali1_2,
   },
   {
-    name: 'ห้องประโยค 3',
+    name: 'ห้องประโยค ป.ธ.3',
     description:
-      'High performance web animation library, hand-written in optimized WASM.',
-    link: { href: '#', label: 'github.com' },
-    logo: logoAnimaginary,
+      'บ่าย , ค่ำ / จันทร์-เสาร์ เข้าสอนทุกวิชาโดย อาจารย์สนิท ธรรมมา ป.ธ.๙ ',
+    link: { href: '#', label: 'Click To Classroom' },
+    logo: logoPali3,
   },
   {
-    name: 'ห้องนักธรรมชั้นตรี',
+    name: 'ห้องประโยค ป.ธ.4',
     description:
-      'Real-time video streaming library, optimized for interstellar transmission.',
-    link: { href: '#', label: 'github.com' },
-    logo: logoHelioStream,
-  },
-  {
-    name: 'cosmOS',
-    description:
-      'The operating system that powers our Planetaria space shuttles.',
-    link: { href: '#', label: 'github.com' },
-    logo: logoCosmos,
-  },
-  {
-    name: 'OpenShuttle',
-    description:
-      'The schematics for the first rocket I designed that successfully made it to orbit.',
-    link: { href: '#', label: 'github.com' },
-    logo: logoOpenShuttle,
+      'เช้า / จันทร์, อังคาร, พุธ สอนวิชาแปลไทยเป็นมคธโดย พระมหาสุธินันท์ สุทฺธินนฺโท ป.ธ.๙  เช้า / พฤหัส, ศุกร์, เสาร์ สอนวิชาแปลมคธเป็นไทย โดย พระมหาเปรม เขมโก ป.ธ.๙',
+    link: { href: '#', label: 'Click To Classroom' },
+    logo: logoPali4,
   },
 ]
 
 function LinkIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
   return (
-    <svg viewBox="0 0 24 24" aria-hidden="true" {...props}>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke-width="1.5"
+      stroke="currentColor"
+      className="h-6 w-6"
+    >
       <path
-        d="M15.712 11.823a.75.75 0 1 0 1.06 1.06l-1.06-1.06Zm-4.95 1.768a.75.75 0 0 0 1.06-1.06l-1.06 1.06Zm-2.475-1.414a.75.75 0 1 0-1.06-1.06l1.06 1.06Zm4.95-1.768a.75.75 0 1 0-1.06 1.06l1.06-1.06Zm3.359.53-.884.884 1.06 1.06.885-.883-1.061-1.06Zm-4.95-2.12 1.414-1.415L12 6.344l-1.415 1.413 1.061 1.061Zm0 3.535a2.5 2.5 0 0 1 0-3.536l-1.06-1.06a4 4 0 0 0 0 5.656l1.06-1.06Zm4.95-4.95a2.5 2.5 0 0 1 0 3.535L17.656 12a4 4 0 0 0 0-5.657l-1.06 1.06Zm1.06-1.06a4 4 0 0 0-5.656 0l1.06 1.06a2.5 2.5 0 0 1 3.536 0l1.06-1.06Zm-7.07 7.07.176.177 1.06-1.06-.176-.177-1.06 1.06Zm-3.183-.353.884-.884-1.06-1.06-.884.883 1.06 1.06Zm4.95 2.121-1.414 1.414 1.06 1.06 1.415-1.413-1.06-1.061Zm0-3.536a2.5 2.5 0 0 1 0 3.536l1.06 1.06a4 4 0 0 0 0-5.656l-1.06 1.06Zm-4.95 4.95a2.5 2.5 0 0 1 0-3.535L6.344 12a4 4 0 0 0 0 5.656l1.06-1.06Zm-1.06 1.06a4 4 0 0 0 5.657 0l-1.061-1.06a2.5 2.5 0 0 1-3.535 0l-1.061 1.06Zm7.07-7.07-.176-.177-1.06 1.06.176.178 1.06-1.061Z"
-        fill="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        d="M4.26 10.147a60.438 60.438 0 0 0-.491 6.347A48.62 48.62 0 0 1 12 20.904a48.62 48.62 0 0 1 8.232-4.41 60.46 60.46 0 0 0-.491-6.347m-15.482 0a50.636 50.636 0 0 0-2.658-.813A59.906 59.906 0 0 1 12 3.493a59.903 59.903 0 0 1 10.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.717 50.717 0 0 1 12 13.489a50.702 50.702 0 0 1 7.74-3.342M6.75 15a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm0 0v-3.675A55.378 55.378 0 0 1 12 8.443m-7.007 11.55A5.981 5.981 0 0 0 6.75 15.75v-1.5"
       />
     </svg>
   )
@@ -79,7 +71,7 @@ export default function Classroom() {
               <Image
                 src={classroom.logo}
                 alt=""
-                className="h-8 w-8"
+                className="h-10 w-10 rounded-full"
                 unoptimized
               />
             </div>

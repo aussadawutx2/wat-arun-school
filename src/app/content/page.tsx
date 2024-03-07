@@ -4,7 +4,7 @@ import { Card } from '@/components/Card'
 import { Section } from '@/components/Section'
 import { SimpleLayout } from '@/components/SimpleLayout'
 
-function SpeakingSection({
+function ContentSection({
   children,
   ...props
 }: React.ComponentPropsWithoutRef<typeof Section>) {
@@ -49,26 +49,26 @@ export default function Speaking() {
   return (
     <SimpleLayout
       title="พื้นที่สำหรับอัพโหลดวีดิโอและกิจกรรมของทางสำนักเรียน"
-      intro="ลองแพล่มใส่เอา"
+      intro=""
     >
       <div className="space-y-20">
-        <SpeakingSection title="Conferences">
+        <ContentSection title="Activity">
           <Appearance
-            href="https://www.youtube.com/watch?v=9ZMNWOjTDlI"
-            title="ใส่วีดิโอเอาเองนะจ๊ะ"
-            description="ใส่คำอธิบาย"
-            event="12-02-2021"
+            href="https://www.youtube.com/watch?v=ys7CBG7ZeBg"
+            title="เปิดตำนาน `วัดแจ้ง` วัดอรุณราชวราราม (ที่คุณอาจไม่เคยรู้) [History of Wat Arun] "
+            description="ประวัติวัดอรุณราชวราราม ที่คุณอาจไม่เคยรู้"
+            event="12 มีนาคม 2563"
             cta="Watch video"
           />
           <Appearance
-            href="#"
-            title="Lessons learned from our first product recall"
-            description="They say that if you’re not embarassed by your first version, you’re doing it wrong. Well when you’re selling DIY space shuttle kits it turns out it’s a bit more complicated."
-            event="Business of Startups 2020"
+            href="https://www.youtube.com/watch?v=vPoazQL5JBE"
+            title="รู้จักสำนักเรียนของเราให้มากขึ้น"
+            description="พาเยี่ยมชมสำนักเรียนวัดอรุณราชวราราม และพูดคุยกับอาจารย์ใหญของสำนักเรียนอย่างใกล้ชิด"
+            event="23 มกราคม 2565"
             cta="Watch video"
           />
-        </SpeakingSection>
-        <SpeakingSection title="Podcasts">
+        </ContentSection>
+        {/* <ContentSection title="Podcasts">
           <Appearance
             href="#"
             title="Using design as a competitive advantage"
@@ -76,7 +76,7 @@ export default function Speaking() {
             event="Encoding Design, July 2022"
             cta="Listen to podcast"
           />
-          {/* <Appearance
+          <Appearance
             href="#"
             title="Bootstrapping an aerospace company to $17M ARR"
             description="The story of how we built one of the most promising space startups in the world without taking any capital from investors."
@@ -89,8 +89,8 @@ export default function Speaking() {
             description="On the importance of creating systems and processes for running your business so that everyone on the team knows how to make the right decision no matter the situation."
             event="How They Work Radio, September 2021"
             cta="Listen to podcast"
-          /> */}
-        </SpeakingSection>
+          />
+        </ContentSection> */}
       </div>
     </SimpleLayout>
   )
