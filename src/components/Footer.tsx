@@ -33,7 +33,11 @@ export function Footer() {
                 <NavLink href="/performance">Performance</NavLink>
               </div>
               <p className="text-sm text-zinc-400 dark:text-zinc-500">
-                &copy; {new Date().getFullYear()} จัดทำโดย พระมหาทัตพล บ้านโข้ง
+                &copy; {new Date().getFullYear()} จัดทำโดย{' '}
+                <span className="flex">
+                  พระมหาทัตพล พัฒนาภิสิทธิ์ รหัส 63522202021 <br />
+                  พระมหาทัตพงศ์ พัฒนาภิสิทธิ์ รหัส 63522202022
+                </span>
               </p>
             </div>
           </ContainerInner>
